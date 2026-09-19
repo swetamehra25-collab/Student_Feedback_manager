@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>FeedbackHub</title>
+    <title>All Feedback | FeedbackHub</title>
 
     <link rel="stylesheet" href="feedback.css">
 </head>
@@ -21,162 +21,48 @@
         </a>
 
         <div class="nav-links">
-            <a href="feedback.html" class="active">Submit Feedback</a>
-            <a href="all-feedback.html">All Feedback</a>
+
+            <a href="feedback.html">
+                Submit Feedback
+            </a>
+
+            <a href="all-feedback.html" class="active">
+                All Feedback
+            </a>
+
         </div>
 
     </nav>
 
 
-    <!-- Main Section -->
+    <!-- Feedback Header -->
 
-    <main class="hero">
+    <main class="feedback-page">
 
-        <!-- Left Side -->
+        <section class="page-header">
 
-        <section class="hero-content">
-
-            <p class="tag">STUDENT FEEDBACK</p>
-
-            <h1>
-                Your opinion
-                <span>matters.</span>
-            </h1>
-
-            <p class="hero-text">
-                Share your experience, thoughts and suggestions.
-                Your feedback helps us understand what is working
-                and where we can improve.
+            <p class="tag">
+                COMMUNITY VOICE
             </p>
 
-            <div class="features">
+            <h1>
+                What students are saying
+            </h1>
 
-                <div class="feature">
-                    <div class="feature-icon">✓</div>
-
-                    <div>
-                        <h3>Simple</h3>
-                        <p>Quick and easy feedback process.</p>
-                    </div>
-                </div>
-
-
-                <div class="feature">
-                    <div class="feature-icon">★</div>
-
-                    <div>
-                        <h3>Rate your experience</h3>
-                        <p>Give us a rating from 1 to 5.</p>
-                    </div>
-                </div>
-
-
-                <div class="feature">
-                    <div class="feature-icon">↗</div>
-
-                    <div>
-                        <h3>Make an impact</h3>
-                        <p>Your feedback helps us improve.</p>
-                    </div>
-                </div>
-
-            </div>
+            <p>
+                Read feedback shared by students.
+            </p>
 
         </section>
 
 
-        <!-- Right Side Form -->
+        <!-- Feedback Cards -->
 
-        <section class="feedback-form-section">
+        <section id="feedbackList">
 
-            <div class="form-header">
-                <h2>Share your feedback</h2>
-
-                <p>
-                    It only takes a minute.
-                </p>
+            <div class="loading">
+                Loading feedback...
             </div>
-
-
-            <form id="feedbackForm">
-
-                <div class="input-group">
-
-                    <label for="name">
-                        Your Name
-                    </label>
-
-                    <input
-                        type="text"
-                        id="name"
-                        placeholder="Enter your name"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="input-group">
-
-                    <label for="rating">
-                        Your Rating
-                    </label>
-
-                    <select id="rating" required>
-
-                        <option value="">
-                            Select a rating
-                        </option>
-
-                        <option value="1">
-                            1 — Poor
-                        </option>
-
-                        <option value="2">
-                            2 — Fair
-                        </option>
-
-                        <option value="3">
-                            3 — Good
-                        </option>
-
-                        <option value="4">
-                            4 — Very Good
-                        </option>
-
-                        <option value="5">
-                            5 — Excellent
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <div class="input-group">
-
-                    <label for="comment">
-                        Your Comment
-                    </label>
-
-                    <textarea
-                        id="comment"
-                        placeholder="Tell us about your experience..."
-                        required
-                    ></textarea>
-
-                </div>
-
-
-                <button type="submit">
-                    Submit Feedback
-                    <span>→</span>
-                </button>
-
-            </form>
-
-
-            <p id="message"></p>
 
         </section>
 
@@ -188,7 +74,7 @@
     </footer>
 
 
-    <script src="feedback.js"></script>
+    <script src="all-feedback.js"></script>
 
 </body>
 
