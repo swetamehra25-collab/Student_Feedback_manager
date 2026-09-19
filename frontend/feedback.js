@@ -8,7 +8,7 @@ form.addEventListener("submit", async (event) => {
     const rating = document.getElementById("rating").value;
     const comment = document.getElementById("comment").value;
 
-    const response = await fetch("https://student-feedback-manager-1-b8um.onrender.com/feedback", {
+    const response = await fetch("https://student-feedback-manager-3-om5c.onrender.com/feedback", {
         method: "POST",
 
         headers: {
